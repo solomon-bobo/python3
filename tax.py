@@ -63,7 +63,7 @@ if __name__ == '__main__':
 	if len(sys.argv) > 1:
 		salary = round(float(sys.argv[1]), 2)
 	if salary < social_security_base_low:
-		print('输入工资不能低于上海市最低标准：' + str(social_security_base_low))
+		print('输入工资不能低于最低标准：' + str(social_security_base_low))
 	else:
 		social_security_personal = round(social_security(salary, 0), 2)
 		social_security_compony = round(social_security(salary, 1), 2)
